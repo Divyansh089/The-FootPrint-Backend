@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: footprint-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false  # Set this in Render dashboard
+      - key: PINATA_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: PINATA_API_SECRET
+        sync: false  # Set this in Render dashboard
+      - key: METADATA_SIGNING_SECRET
+        sync: false  # Set this in Render dashboard
+      - key: AUTO_PIN_METADATA
+        value: "true"
+      - key: ALLOWED_ORIGINS
+        value: "https://your-frontend-domain.com,http://localhost:3000,http://localhost:3001"
