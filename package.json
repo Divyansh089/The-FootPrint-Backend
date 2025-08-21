@@ -11,8 +11,8 @@
     "start:production": "NODE_ENV=production node dist/server.js",
     "seed": "tsx src/scripts/seed.ts",
     "postbuild": "npm run seed || echo 'Seeding skipped - database may not be available'",
-    "clean": "rm -rf dist",
-    "prebuild": "npm run clean || echo 'Clean skipped'"
+    "clean": "node scripts/clean.js",
+    "prebuild": "npm run clean"
   },
   "dependencies": {
     "@types/cors": "2.8.17",

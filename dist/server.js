@@ -99,7 +99,7 @@ app.use((error, req, res, next) => {
 app.use((req, res) => {
     res.status(404).json({ error: 'Route not found' });
 });
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 4007;
 app.listen(PORT, () => {
     console.log(`🚀 Server running on port ${PORT}`);
     console.log(`📊 Health check: http://localhost:${PORT}/api/health`);

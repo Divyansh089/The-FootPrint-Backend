@@ -10,7 +10,6 @@ const connectDB = async () => {
             minPoolSize: 2,
             retryWrites: true,
             bufferCommands: false, // Disable mongoose buffering
-            bufferMaxEntries: 0, // Disable mongoose buffering
             dbName: 'footprint-evidence', // Specify database name explicitly
             autoIndex: process.env.NODE_ENV !== 'production', // Build indexes in development only
         };

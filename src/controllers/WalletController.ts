@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import WalletPermission, { IWalletPermission } from '../models/WalletPermission';
+import WalletPermission, { IWalletPermission } from '../models/WalletPermission.js';
 
 export class WalletController {
   // Create wallet access request

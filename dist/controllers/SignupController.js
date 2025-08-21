@@ -1,5 +1,5 @@
-import SignupRequest from '../models/SignupRequest';
-import User from '../models/User';
+import SignupRequest from '../models/SignupRequest.js';
+import User from '../models/User.js';
 export class SignupController {
     // Get all signup requests
     static async getAllSignupRequests(req, res) {

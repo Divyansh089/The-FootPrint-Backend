@@ -1,4 +1,4 @@
-import WalletPermission from '../models/WalletPermission';
+import WalletPermission from '../models/WalletPermission.js';
 export class WalletController {
     // Create wallet access request
     static async createAccessRequest(req, res) {
