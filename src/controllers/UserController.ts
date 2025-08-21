@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import User, { IUser, Role } from '../models/User.js';
-import SignupRequest from '../models/SignupRequest.js';
+import User, { IUser, Role } from '../models/User';
+import SignupRequest from '../models/SignupRequest';
 
 export class UserController {
   // Get all users

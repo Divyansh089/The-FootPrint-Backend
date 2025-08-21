@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import SignupRequest, { ISignupRequest } from '../models/SignupRequest.js';
-import User from '../models/User.js';
+import SignupRequest, { ISignupRequest } from '../models/SignupRequest';
+import User from '../models/User';
 
 export class SignupController {
   // Get all signup requests
